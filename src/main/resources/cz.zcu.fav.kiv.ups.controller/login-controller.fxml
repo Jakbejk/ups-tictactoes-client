@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.zcu.fav.kiv.ups.controller.LoginController">
+   <Label fx:id="reconnectLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="151.0" />
+   <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" />
+   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Login:">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </Label>
+      <TextField fx:id="loginInput">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin></TextField>
+      <Button mnemonicParsing="false" onAction="#login" text="Submit" />
+   </HBox>
+</VBox>
