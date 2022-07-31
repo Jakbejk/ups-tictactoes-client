@@ -65,26 +65,14 @@ public class TicTacToes {
             }
             return false;
         } else if (direction == Direction.RISING_DIAGONAL) {
-            // TODO
             for (int i = minX; i < maxX; i++) {
-                for (int j = maxY - 1; j >= minY; j--) {
-                    if (x - i == y - j) {
-                        if (playGround[i][j] == player) counter++;
-                        else counter = 0;
-                        if (counter == winnerLine) {
-                            return true;
-                        }
-                    }
-                }
-                /*
-                int j = x + i - y;
+                int j = x - i + y;
                 if (j < 0 || j >= playGround.length) continue;
                 if (playGround[i][j] == player) counter++;
                 else counter = 0;
                 if (counter == winnerLine) {
                     return true;
                 }
-                 */
             }
             return false;
         } else if (direction == Direction.ASCENDENT_DIAGONAL) {
